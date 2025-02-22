@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h1 {
+        background-color: orange;
+        color: white;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        font-size: 2rem;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    form {
+        width: 50%;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    label {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+    
+    textarea {
+        height: 150px;
+        resize: vertical;
+    }
+    
+    button {
+        padding: 12px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    
+  
+    
+    a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #6c757d;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+     
+    }
+    
+   
+    </style>
+</head>
+<body>
+    <h1>Add a New Post</h1>
+    <form action="/add-post" method="POST">
+        <label>Title:</label>
+        <input type="text" name="title" required>
+        <label>Content:</label>
+        <textarea name="content" required></textarea>
+        <button type="submit">Add Post</button>
+    </form>
+    <a href="/posts">Back to Posts</a>
+</body>
+</html>

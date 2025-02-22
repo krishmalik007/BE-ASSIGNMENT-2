@@ -1,0 +1,59 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    background-color: orange
+    ;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+    
+}
+
+
+div {
+    width: 60%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+
+h2 a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.5rem;
+    
+}
+
+h2 a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+a[href="/add-post"] {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+  
+}
+
